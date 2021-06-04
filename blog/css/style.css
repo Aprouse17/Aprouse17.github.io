@@ -1,0 +1,313 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+}
+
+{
+    background-color: whitesmoke;
+}
+
+.main-section{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.article-image{
+    float: left;
+    margin-right: 1rem;
+}
+.aside-image{
+    width: 50%;
+}
+
+.bottom-image{
+    width: 75%;
+    height: 100%
+    display: block
+    margin: 5px 5px 5px;
+    padding-top: 3rem;
+    
+}
+.image-bar{
+    width: 75%
+}
+
+.subsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+hr{
+    margin-right: 4rem;
+}
+
+.copyright{
+    float: left;
+    text-align: left;
+}
+
+.links{
+    display: inline;
+    text-align: right;
+    padding-left: 10rem;
+    
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "josefinslab";
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "robotoslab";
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "rozhaone";
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ultra";
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family:"opensans", Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: black;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    transform: rotate(-3deg);
+    letter-spacing: 0.025rem;
+    margin-left: none;
+    margin-right: none;
+
+}
+
+.highlight {
+    font-family:"ultra", Times, serif;
+    font-size: 3rem;
+    border: .5rem solid maroon;
+    background-color: maroon;
+    border-top-left-radius: 10% 30%;
+    border-bottom-right-radius: 10% 30%;
+    box-shadow: black;
+    color:lightgray;
+    text-align: center;
+    margin-bottom: 1 rem;
+    transform: rotate(-20deg);
+    letter-spacing: 0.2rem;
+}
+
+nav {
+    border-top: .03125rem solid black;
+    border-bottom: .03125rem solid black;
+    word-spacing: 5rem;
+    line-height: 5rem;
+    margin-left: 4rem;
+}
+
+nav a{
+    font-family: "lato", Verdana, sans-serif;
+    font-size: 2rem;
+    color: blue;
+}
+
+nav a:nth-child(even):hover{
+    color:black;
+    text-decoration-line: line-through;
+    transform: rotate(-10deg);
+}
+
+nav a:nth-child(odd):hover{
+        color:black;
+        text-decoration-line: line-through;
+        transform: rotate(10deg);
+    }
+
+    h2 {
+        font-family:"roboto", Verdana, sans-serif;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-top: 3rem;
+        margin-left: 4rem;
+    }
+
+    h3 {
+        font-family: "opensans", Verdana, sans-serif;
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    p {
+        font-family: "lato", Verdana, sans-serif;
+        text-align: left;
+    
+    }
+
+    .time {
+        font-size: .75rem;
+        font-style: oblique;
+    }
+
+    figure {
+        margin-bottom: none;
+       }
+
+    figcaption {
+        border-top: 1rem solid lightgray;
+        border-left: .0625rem solid lightgray;
+        border-right: .0625rem solid lightgray;
+        border-bottom: .0625rem solid lightgray;
+        background-color: lightgray;
+    }
+
+    aside {
+        margin-left: 2rem;
+        margin-right: 4rem;
+        padding-left: 1rem;
+        border-left: .03125rem solid black;
+        
+    }
+
+    .dots {
+        font-size: .25rem;
+    }
+
+    button {
+        font-family:"ultra", Times, serif;
+        font-size: 1.5rem;
+        text-align: center;
+        border: 0.75rem solid navy;
+        background-color: navy;
+        border-top-right-radius: 10% 30%;
+        border-bottom-left-radius: 10% 30%;
+        border-top-left-radius: 5% 20%;
+        border-bottom-right-radius: 5% 20%;
+        box-shadow: black;
+        color: lightgray;
+        margin-top: 1 rem;
+    }
+
+   footer{
+    display: grid;
+    text-align: right;
+    text-decoration: none;
+}
+
+    a {
+        font-family: Times, Georgia, serif; 
+    }
+
+    a{
+        outline: none;
+        text-decoration-line: none;
+    }
+    
+a:focus, 
+ a:hover {
+        border-bottom: .0625rem solid;
+        background-color: green;
+}
+
+a:active {
+    background-color: purple;
+}
+
+
+
+    
+
